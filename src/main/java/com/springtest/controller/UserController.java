@@ -20,7 +20,7 @@ public class UserController {
     }
 
     @GetMapping("/inject")
-    public String getUser(Long id) {
+    public String setUsers(Long id) {
         userService.add(new User("User 1", "user1_pass"));
         userService.add(new User("User 2", "user2_pass"));
         userService.add(new User("User 3", "user3_pass"));
